@@ -1,24 +1,29 @@
 # KafkaConsumerTest
 
-**TODO: Add description**
+Testing an apparent memory leak in streaming kafka messages with KafkaEx
 
-## Installation
+## Usage
 
-If [available in Hex](https://hex.pm/docs/publish), the package can be installed as:
+Have kafka running locally.
 
-  1. Add `kafka_consumer_test` to your list of dependencies in `mix.exs`:
+Get the repo and deps:
 
-    ```elixir
-    def deps do
-      [{:kafka_consumer_test, "~> 0.1.0"}]
-    end
-    ```
+```
+git clone https://github.com/dplummer/kakfa_consumer_test.git
+cd kafka_consumer_test
+mix deps.get
+```
 
-  2. Ensure `kafka_consumer_test` is started before your application:
+Compile and run the consumer and start the observer (in prod env if that matters):
 
-    ```elixir
-    def application do
-      [applications: [:kafka_consumer_test]]
-    end
-    ```
+```
+MIX_ENV=prod mix compile
+MIX_ENV=prod iex -S mix
+iex> :observer.start
+```
 
+Run the producer from a different terminal:
+
+```
+mix producer
+```
