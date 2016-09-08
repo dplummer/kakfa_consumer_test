@@ -1,0 +1,2 @@
+%{"kafka_ex": {:hex, :kafka_ex, "0.5.0", "d7c6d5a2b26a0b17e60e01d478230a92ca104633341dec11203eeb53bce0d449", [:mix], []},
+  "progress_bar": {:hex, :progress_bar, "1.5.0", "22fd314c28bcc825b69ebad7c55ff72c9d3677adb475e03a5afbae1c356ca747", [:mix], []}}
