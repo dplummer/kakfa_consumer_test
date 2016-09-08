@@ -27,3 +27,10 @@ Run the producer from a different terminal:
 ```
 mix producer
 ```
+
+## Observed behavior on my MacBook Pro
+
+Ran the producer twice and captured the memory and process graphs from the observer. Memory did not decrease after 5 minutes of no activity, except in Elixir.KafkaEx.Server, which did decrease to ~143k (from 264k).
+
+![memory and bandwidth usage](memory_usage.png "memory and bandwidth usage graph")
+![process memory usage](process_list.png "process memory usage table")
