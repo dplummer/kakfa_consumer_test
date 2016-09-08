@@ -1,6 +1,6 @@
 # KafkaConsumerTest
 
-Testing an apparent memory leak in streaming kafka messages with KafkaEx
+Testing an apparent memory leak in streaming kafka messages with KafkaEx. Issue raised as [KafkaEx#141](https://github.com/kafkaex/kafka_ex/issues/141).
 
 ## Usage
 
